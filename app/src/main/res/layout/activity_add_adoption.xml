@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    tools:context=".AddAdoptionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                        android:id="@+id/avatarIv"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:background="@drawable/fondo"
+                        android:src="@drawable/fondo" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/nameTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:hint="@string/textinput_name"
+                            android:textColor="@android:color/white"
+                            android:textSize="17sp" />
+
+                    </LinearLayout>
+
+                    <!-- Button Publish post  to firebase -->
+                    <Button
+                        android:id="@+id/pUploadBtn"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:text="@string/txtaddpost"
+                        android:theme="@style/RaisedButtonDark4" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangle_primarycolor"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="15dp">
+
+                            <!--ImageView: Input post image -->
+                            <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                                android:id="@+id/pImageIv"
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="20dp"
+                                android:src="@drawable/addimagepet"
+                                android:visibility="visible" />
+
+                            <ImageButton
+                                android:id="@+id/closeimageBtn"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignEnd="@+id/pImageIv"
+                                android:layout_alignRight="@+id/pImageIv"
+                                android:background="@null"
+                                android:src="@drawable/ic_close_accent"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <!--Button select image // boton seleccionar imagen-->
+                    <Button
+                        android:id="@+id/imageBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="@string/imagebtntxt"
+                        android:theme="@style/RaisedButtonDark4" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_divider"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <!-- EditText: Input adoption name pet -->
+                    <EditText
+                        android:id="@+id/pTitleEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/rectangle_bag_gray"
+                        android:hint="@string/txthintnameofpet"
+                        android:padding="12dp"
+                        android:singleLine="true" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <!-- EditText: Input adoption age pet -->
+                        <EditText
+                            android:id="@+id/pAgeEt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_bag_gray"
+                            android:hint="@string/txthintageofpet"
+                            android:padding="12dp"
+                            android:singleLine="true" />
+
+                        <!-- EditText: Input adoption specie pet -->
+                        <EditText
+                            android:id="@+id/pSpeciesEt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_bag_gray"
+                            android:hint="@string/txthintspeciesofpet"
+                            android:padding="12dp"
+                            android:singleLine="true" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/pSexEt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_bag_gray"
+                            android:padding="12dp" />
+
+                        <!-- EditText: Input adoption race pet -->
+                        <Spinner
+                            android:id="@+id/pStateEt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_bag_gray"
+                            android:padding="12dp" />
+
+                    </LinearLayout>
+
+                    <!-- EditText: Input adoption state pet -->
+                    <EditText
+                        android:id="@+id/pRaceEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rectangle_bag_gray"
+                        android:hint="@string/txthintraceofpet"
+                        android:padding="12dp"
+                        android:singleLine="true" />
+
+                    <!-- EditText: Input adoption location pet -->
+                    <EditText
+                        android:id="@+id/pLocationEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rectangle_bag_gray"
+                        android:hint="@string/txthintlocationofpet"
+                        android:padding="12dp"
+                        android:singleLine="true" />
+
+                    <!--EditText: Input adoption descripcion pet-->
+                    <EditText
+                        android:id="@+id/pDescriptionEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="@drawable/rectangle_bag_gray"
+                        android:hint="@string/textinput_descrip"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:minHeight="100dp"
+                        android:padding="10dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c9ccd1"
+    tools:context=".ProfileFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="550dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/collapsingToolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:contentScrim="@color/colorPrimary"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="290dp"
+                        android:layout_gravity="center_horizontal"
+                        android:elevation="5dp"
+                        tools:targetApi="lollipop">
+
+                        <ImageView
+                            android:id="@+id/coverIv"
+                            android:layout_width="match_parent"
+                            android:layout_height="290dp"
+                            android:background="@drawable/cover"
+                            android:scaleType="fitXY" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            android:layout_alignBottom="@+id/coverIv"
+                            android:background="@color/backgroundtext_card"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                                android:id="@+id/avatarIv"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/fondo"
+                                android:src="@drawable/fondo" />
+
+                            <TextView
+                                android:id="@+id/nameTv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal"
+                                android:text="@string/textinput_name"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/emailTv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal"
+                                android:hint="@string/textinput_email"
+                                android:textColor="@color/TextColorWhite"
+                                android:textIsSelectable="true" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/ccpTv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:hint="@string/textinput_ccp"
+                                    android:textColor="@color/TextColorWhite"
+                                    android:textIsSelectable="true" />
+
+                                <TextView
+                                    android:id="@+id/phoneTv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:hint="@string/textinput_phone"
+                                    android:textColor="@color/TextColorWhite"
+                                    android:textIsSelectable="true" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        app:layout_collapseMode="pin"
+                        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/appBar"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/activity_vertical_margin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#c9ccd1"
+                        android:orientation="vertical"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:elevation="5dp"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            tools:targetApi="lollipop">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/ic_info_black"
+                                    tools:ignore="RtlSymmetry" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:text="@string/textinput_descrip"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <com.codesgood.views.JustifiedTextView
+                                android:id="@+id/descriptionTv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:autoLink="all"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="10dp"
+                                android:paddingRight="5dp"
+                                android:paddingBottom="10dp"
+                                android:textColor="@color/TextColorBlack"
+                                android:textIsSelectable="true"
+                                app:autoSizeMaxTextSize="15sp"
+                                app:autoSizeTextType="uniform" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@color/background" />
+
+                            <HorizontalScrollView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:scrollbars="none">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tabComunityTv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:background="@drawable/shape_rectangle_primary_dark"
+                                        android:gravity="center"
+                                        android:padding="10dp"
+                                        android:text="@string/txttiletoolbar_animalcommunity"
+                                        android:textColor="@color/TextColorWhite"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/tabAdoptionTv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:gravity="center"
+                                        android:padding="10dp"
+                                        android:text="@string/txttiletoolbar_Adoption"
+                                        android:textColor="@color/TextcolorGray"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tabReportsTv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:gravity="center"
+                                        android:padding="10dp"
+                                        android:text="@string/txttiletoolbar_Reports"
+                                        android:textColor="@color/TextcolorGray"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/tabServicesTv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:gravity="center"
+                                        android:padding="10dp"
+                                        android:text="@string/txttiletoolbar_Services"
+                                        android:textColor="@color/TextcolorGray"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                            </HorizontalScrollView>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@color/background" />
+
+                            <LinearLayout
+                                android:id="@+id/LayoutReport"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/shape_rectangle_primary"
+                                android:orientation="vertical"
+                                android:padding="5dp"
+                                android:visibility="gone">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/shape_rectangle"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/TapReportsLost"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/shape_rectangle02"
+                                        android:gravity="center"
+                                        android:padding="8dp"
+                                        android:text="@string/txttiletoolbar_animallost"
+                                        android:textColor="@color/TextColorBlack" />
+
+                                    <TextView
+                                        android:id="@+id/TapReportsFound"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:padding="8dp"
+                                        android:text="@string/txttiletoolbar_animalfund"
+                                        android:textColor="@color/TextColorWhite" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/ComunityBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:text="@string/txtcomunitybtn"
+                                android:theme="@style/RaisedButtonDark4"
+                                android:visibility="visible" />
+
+                            <Button
+                                android:id="@+id/AdoptionBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="5dp"
+                                android:text="@string/txtadoptionbtn"
+                                android:theme="@style/RaisedButtonDark3"
+                                android:visibility="gone" />
+
+                            <Button
+                                android:id="@+id/reportlostBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="5dp"
+                                android:text="@string/txtpostanimallost"
+                                android:theme="@style/RaisedButtonDark2"
+                                android:visibility="gone" />
+
+                            <Button
+                                android:id="@+id/reportfoundBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="5dp"
+                                android:text="@string/txtpostanimalfound"
+                                android:theme="@style/RaisedButtonDark3"
+                                android:visibility="gone" />
+
+                            <Button
+                                android:id="@+id/ServicesBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="5dp"
+                                android:text="@string/txtservicebtn"
+                                android:theme="@style/RaisedButtonPurple"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--RecyclerView: user specific post -->
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerview_posts"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="3dp"
+                        android:scrollbars="vertical"
+                        android:visibility="visible" />
+
+                    <!--RecyclerView: user specific post -->
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerview_adoptions"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="3dp"
+                        android:scrollbars="vertical"
+                        android:visibility="gone" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerview_reports"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="3dp"
+                        android:scrollbars="vertical"
+                        android:visibility="gone" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerview_reportsfound"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="3dp"
+                        android:scrollbars="vertical"
+                        android:visibility="gone" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/servicesRecyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="vertical"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Floating Action Button-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_edit_white"
+        app:layout_anchor="@id/appBar"
+        app:layout_anchorGravity="bottom|end" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

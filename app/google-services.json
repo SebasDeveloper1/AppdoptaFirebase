@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "160767417156",
+    "firebase_url": "https://appdoptafirebase-6f90d.firebaseio.com",
+    "project_id": "appdoptafirebase-6f90d",
+    "storage_bucket": "appdoptafirebase-6f90d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160767417156:android:f736322a4d692654f39511",
+        "android_client_info": {
+          "package_name": "com.canibal.appdoptafirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "160767417156-qmjgbubk9hmodjmhoa7ppnbotbf44u57.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVc3JA00qWHNJPJSZwhpjnF5mccMUYTGA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "160767417156-qmjgbubk9hmodjmhoa7ppnbotbf44u57.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

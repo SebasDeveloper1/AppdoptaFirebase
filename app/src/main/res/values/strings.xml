@@ -1,0 +1,394 @@
+<resources>
+    <string name="app_name">AppDopta</string>
+
+    <!--Txt login-->
+    <string name="textinput_email">Correo</string>
+    <string name="invalid_email">Correo Invalido</string>
+    <string name="textinput_password">Contraseña</string>
+    <string name="textBtn_login_btn">INICIA SESIÓN</string>
+    <string name="textvwdont_have_account">¿No tienes cuenta?, Crea una aquí</string>
+    <string name="textvw_recoverpassword">¿Olvidaste tu contraseña?</string>
+    <string name="textloggin_in">Iniciando sesión...</string>
+    <string name="txtauthentication_failed">Autenticación fallida.</string>
+    <string name="login_failed">Error de inicio de sesion..</string>
+
+    <!--Recovery-->
+    <string name="title_recoverypassword">Restablece tu contraseña</string>
+    <string name="textBtn_recovery_btn">Restablecer</string>
+    <string name="textBtn_cancel_btn">Cancelar</string>
+    <string name="txtsending_email">Enviando correo electrónico</string>
+    <string name="txtrecovery_msm">¡Revisa tu correo por favor!</string>
+    <string name="txtrecovery_msmerror">Restauración fallida</string>
+
+    <!--Txt register-->
+    <string name="texttitle_toolbarregister">Crea tu cuenta</string>
+    <string name="texvwaready_have_ancout1">¿Ya tienes cuenta?,</string>
+    <string name="texvwareadyancout">Inicia ahora</string>
+    <string name="textinput_confirmpassword">Confirmar Contraseña</string>
+    <string name="textBtn_register_btn">ÚNETE</string>
+    <string name="textregistering_user">Registrando usuario...</string>
+    <string name="length_password">Usa 8 o más caracteres con una combinación de letras, números y símbolos </string>
+    <string name="different_passwords">Las contraseñas no coinciden</string>
+    <string name="msmaceptCB">¡Para continuar con el registro debes aceptar los términos y condiciones de uso!</string>
+    <string name="validate_name">Ingresa tu nombre de usuario</string>
+    <string name="validate_phone">Ingresa tu número de teléfono o WhatsApp </string>
+    <string name="txtregistered">Bienvenido </string>
+    <string name="txtacceptthetermsandconditionsofuse1">Acepto los </string>
+    <string name="txtacceptthetermsandconditionsofuse2">Términos y Condiciones de uso</string>
+
+    <!--Txt DasboardActivity-->
+    <string name="txttiletoolbar_animalcommunity">Comunidad</string>
+    <string name="txttiletoolbar_profileuser">Perfil</string>
+    <string name="txttiletoolbar_userslist">Usuarios</string>
+    <string name="txttiletoolbar_chatslist">Chats</string>
+    <string name="txttiletoolbar_Notifications">Notificaciones</string>
+    <string name="txttiletoolbar_Menu">Menú</string>
+    <string name="txttiletoolbar_Adoption">Adopción</string>
+    <string name="txttiletoolbar_Reports">Reportes</string>
+    <string name="txttiletoolbar_Services">Servicios</string>
+
+    <!--Txt HomeFragment-->
+    <string name="txtsearch_homefragment">Buscar publicaciones...</string>
+
+    <!--Txt MoreFragment-->
+    <string name="txtviewprofile">Ver tu perfil</string>
+
+    <!--Txt ProfileFragment-->
+    <string name="txtuploadprofile">Editar Perfil</string>
+    <string name="txtpostcomunity">-Nueva publicación en la comunidad</string>
+    <string name="txtpostadoption">-Nueva publicación de adopción</string>
+
+    <!--EditUserDataActivity-->
+    <string name="txtmsmalertuser">Recuerda que tu nombre e imagen de perfil de usuario solo podrán ser cambiados pasadas 24 horas a partir de la última actualización que realizaste a estos dos datos.</string>
+    <string name="txtphotoprofile">Foto de perfil</string>
+    <string name="updatephotoprofile">Editar foto de perfil</string>
+    <string name="msmtitleupdatephotoprofile">¿Quieres cambiar tu imagen de perfil?</string>
+    <string name="msmtitleupdatenameuser">¿Quieres cambiar tu nombre de usuario?</string>
+    <string name="msmdescrupdatephotoprofile">Recuerda que, si la cambias deveras esperar 24 horas a partir de la actualización de tu imagen para poder realizar un nuevo cambio.</string>
+    <string name="msmdescrupdatenameuser">Recuerda que, si lo cambias deveras esperar 24 horas a partir de la actualización de tu nombre de usuario para poder realizar un nuevo cambio.</string>
+    <string name="txtacept">Aceptar</string>
+    <string name="txtphotocover">Foto de portada</string>
+    <string name="updatephotocover">Editar foto de portada</string>
+    <string name="txtinfo">Información</string>
+    <string name="txtnameuser">Nombre de usuario</string>
+    <string name="updatenameuser">Editar nombre de usuario</string>
+    <string name="updatemsmnameuser">Ingrese el nombre de usuario</string>
+    <string name="updatemsmdescriptionuser">Ingrese la descripción de usuario</string>
+    <string name="updatemsmphoneuser">Ingrese el teléfono de usuario</string>
+    <string name="txtdescriptionuser">Descripción de usuario</string>
+    <string name="updatedescriptionuser">Editar descripción</string>
+    <string name="txtphoneuser">Teléfono</string>
+    <string name="updatephoneuser">Editar teléfono</string>
+    <string name="changePassworduser">Cambiar Contraseña</string>
+    <string name="txtmsmdialogchangePassworduser">Esta función NO está disponible para los usuarios registrados a través de su cuenta de Google, ya que la autentificación se realiza a través de credenciales de la cuenta.</string>
+    <string name="changeNameuser">Cambiar nombre de usuario</string>
+    <string name="changeDescriptionuser">Cambiar descripción de usuario</string>
+    <string name="changePhoneuser">Cambiar teléfono de usuario</string>
+
+    <!--Txt Edit profile-->
+    <string name="msmconection">Para editar la información de tu perfil es necesario estar conectado a internet</string>
+    <string name="Updatingtitle">Editar</string>
+    <string name="txtupdatindate">Ingrese</string>
+    <string name="Updatingbtn">Actualizar</string>
+    <string name="dateupload">Ingresa el dato que deseas actualizar</string>
+    <string name="Updatingtxt">Actualizado</string>
+    <string name="Updatingprofilepicture">Actualizando foto de perfil</string>
+    <string name="Updatingcoverphoto">Actualizando foto de portada</string>
+    <string name="UpdatingName">Actualizando nombre de usuario</string>
+    <string name="UpdatingDescription">Actualizando descripción de usuario</string>
+    <string name="UpdatingPhone">Actualizando teléfono de usuario</string>
+    <string name="UpdatingPassword">Actualizando contraseña de usuario</string>
+
+    <!--Txt cambiar contraseña-->
+    <string name="txtentercurrentpass">Ingresa tu contraseña actual</string>
+    <string name="txtcurrentpass">Contraseña actual</string>
+    <string name="txtNewpass">Nueva contraseña</string>
+    <string name="txtConfNewpass">Confirmar nueva contraseña</string>
+    <string name="uploadpassbtn">Cambiar</string>
+    <string name="txtPasswordUpdated">Contraseña actualizada</string>
+
+    <!--Editar fotos de usuario-->
+    <string name="camerapermission">Cámara</string>
+    <string name="gallerypermission">Galería</string>
+    <string name="pickimagen">Seleccionar imagen de: </string>
+    <string name="textpermissionsimagen">Habilita la cámara y el permiso de almacenamiento </string>
+    <string name="textpermissionstorage">Habilita el permiso de almacenamiento </string>
+    <string name="imageupdate">Imagen actualizada</string>
+    <string name="imageupdateerror">Error al actualizar la imagen</string>
+    <string name="imagesomeerror">Algún error ocurrió</string>
+
+    <!--Txt UsersFragment-->
+    <string name="txtsearch_usersfragment">Buscar Usuarios...</string>
+
+    <!--Txt Chat Activity-->
+    <string name="statusoff">Última vez: </string>
+    <string name="Typing">Escribiendo...</string>
+    <string name="Online">En línea</string>
+    <string name="msmempty">No se puede enviar el mensaje vacío</string>
+    <string name="userblocket">Usuario bloqueado</string>
+    <string name="userunblocket">Usuario desbloqueado</string>
+    <string name="userblocketfailed">Bloqueo fallido</string>
+    <string name="userunblocketfailed">Desbloqueo fallido</string>
+    <string name="sendImage">Enviando imagen...</string>
+    <string name="Sentphoto">Te envió una foto</string>
+    <string name="deletemsm">Este mensaje fue eliminado ...</string>
+
+    <!--Txt AddPostActivity-->
+    <string name="txttiletoolbar_addnewpost">Crear publicación</string>
+    <string name="txttiletoolbar_updatepost">Editar publicación</string>
+    <string name="updatepostbtn">Guardar</string>
+    <string name="uploadpostbtn">Publicar</string>
+    <string name="txterrortiltepost">Ingresa el título de la publicación</string>
+    <string name="txterrordescpost">Ingresa la descripción o el contenido de la publicación</string>
+    <string name="txtprogresbar_updatingpost">Actualizando publicación ...</string>
+    <string name="txtprogresbar_Publishingpost">Publicando...</string>
+    <string name="txtpostpublished">Publicado</string>
+    <string name="msmnotificationpos">agregó una publicación</string>
+
+    <!--Txt PostDetailActivity-->
+    <string name="titlepostdetail">Detalles de la publicación</string>
+    <string name="Subjecttxt">Asunto...</string>
+    <string name="sharetxt">Compartir con</string>
+    <string name="txtedit">Editar</string>
+    <string name="txtdelete">Eliminar</string>
+    <string name="progresbardeleting">Eliminando...</string>
+    <string name="deletedpost">Publicación eliminada</string>
+    <string name="likebtn">Me gusta</string>
+    <string name="commentbtn">Comentarios</string>
+    <string name="txtnotifiliked">Le gusta tu publicación</string>
+    <string name="progresbaradingcomment">Añadiendo comentario ...</string>
+    <string name="txtcommentempty">El comentario está vacío</string>
+    <string name="txtaddcomment">Comentario añadido</string>
+    <string name="txtdeletecomment">Comentario eliminado</string>
+    <string name="txtnotificomment">Comento tu publicación</string>
+
+    <!--Txt PostLikeByActivity-->
+    <string name="txttitlelikebyactivity">Personas que reaccionaron</string>
+
+    <!--Txt SettingsActivity-->
+    <string name="txttitleSettings">Ajustes</string>
+    <string name="msmnotificationdesactivatepost">Las notificaciones han sido desactivadas </string>
+    <string name="msmUnSubscriptionfailed">No se lograron desactivar las notificaciones</string>
+    <string name="msmnotificationactivatepost">Las notificaciones han sido activadas </string>
+    <string name="msmSubscriptionfailed">No se lograron activar las notificaciones</string>
+
+    <!--Txt ThereProfileActivity-->
+    <string name="textinput_name">Nombre</string>
+    <string name="textinput_descrip">Descripción</string>
+    <string name="textinput_ccp">CCP</string>
+    <string name="textinput_phone">Teléfono</string>
+    <string name="textinput_user">Usuario</string>
+    <string name="txtcontact">Contactar por medio de: </string>
+    <string name="txtchatappdopta">Chat AppDopta</string>
+    <string name="txtchatwhatsapp">Chat WhatsApp</string>
+    <string name="txtllamada">Llamada telefónica</string>
+    <string name="txtllamadapermission">¡Necesitas habilitar los permisos de teléfono para usar esta función!</string>
+    <string name="psotivebtnllamadapermission">Intentar nuevamente</string>
+    <string name="negativebtnllamadapermission">No gracias</string>
+    <string name="txtllamadapermissionreqsettings">¡Necesitas habilitar los permisos de manera manual en los ajustes de tu dispositivo! </string>
+
+    <!--Adapters-->
+    <!--AdapterChat-->
+    <string name="deletemessage">¿Estás seguro de eliminar este mensaje?</string>
+    <string name="txtseen">Visto</string>
+    <string name="txtselivered">Entregado</string>
+    <string name="txtmessagedeleted">Mensaje eliminado</string>
+    <string name="txtmessagefailedeleted">Puedes eliminar solo tus mensajes</string>
+
+    <!--TxtAdapterComments-->
+    <string name="msmdeletecomment">¿Quieres eliminar este comentario?</string>
+    <string name="notdeletedcomment">No se pueden eliminar los comentarios de otras personas</string>
+
+    <!--TxtAdapterNotification-->
+    <string name="titlenotification">Notificaciones</string>
+    <string name="msmdeletenotification">¿Estás seguro de eliminar esta notificación?</string>
+    <string name="txtnotificationdeleted">Notificación eliminada</string>
+    <string name="txtnewnotifiation">Nueva notificación</string>
+    <string name="txtnewmessage">Nuevo mensaje</string>
+
+    <!--TxtAdapterPosts-->
+    <string name="txtviewdetail">Ver detalles</string>
+    <string name="txtviewmoredetail">Más detalles</string>
+    <string name="msmdeletepost">¿Quieres eliminar esta publicación?</string>
+    <string name="msmeditpost">¿Quieres editar esta publicación?</string>
+    <string name="txtdeletepost">Publicación eliminada</string>
+    <string name="txtviewmore">Ver más...</string>
+    <string name="txtviewless">Ver menos...</string>
+
+    <!--TxtAdapterUsers-->
+    <string name="txtoptionuserchat">Chat</string>
+    <string name="blocketuserpositive">Estás bloqueado por este usuario, no puedes enviar mensajes</string>
+
+    <!--Archivos xml layouth-->
+    <!--activity_add_post.xml-->
+    <string name="txthinttile">Ingresa un título </string>
+    <string name="txthintconten">¿Qué quieres compartir hoy?</string>
+    <string name="imagebtntxt">Agregar una Imagen</string>
+
+    <!--activity_chat.xml-->
+    <string name="chatmsmet">Escribe un mensaje </string>
+
+    <!--activity_postdetail.xml-->
+    <string name="commentsmsmet">Comentar...</string>
+    <string name="commentbtntxt">Comentar</string>
+    <string name="compartirBtn">Compartir</string>
+    <string name="titletvdetailpost">Título</string>
+    <string name="titlecomments">Personas que han comentado</string>
+
+    <!--activity_settings.xml-->
+    <string name="txtnotificationspost">Notificar de nuevas publicaciones </string>
+
+    <!--row_notification-->
+    <string name="txtnotification">Notificación</string>
+    <string name="txttime">Tiempo</string>
+
+    <!--Txt menu-main.xml-->
+    <string name="txtSettings">Ajustes</string>
+    <string name="txtLogout">Cerrar sesión</string>
+    <string name="txtSearch">Buscar</string>
+    <string name="txtaddpost">Publicar</string>
+
+    <!-- help -->
+    <string name="txthelp">Ayuda y soporte técnico</string>
+    <string name="txterror">Reportar un problema</string>
+    <string name="txtaffair">Asunto</string>
+    <string name="txtreport">Reporte</string>
+    <string name="txtmsmreport">¡Por favor llena los campos requeridos para generar el reporte!</string>
+    <string name="txtmsmreport2">¡No hay ninguna aplicación que admita esta acción!</string>
+    <string name="txtsend">Enviar</string>
+    <string name="txtabout">Acerca de</string>
+    <string name="descriptionappdopta">Somos una plataforma móvil colombiana cuyo propósito es promover y facilitar procesos de adopción, cuidado y tenencia responsable de nuestros amigos peludos, iniciando en el municipio de Ubaté/Cundinamarca y con el propósito de llegar a muchos más lugares...</string>
+
+    <!--activity_add_adoption.xml-->
+    <string name="txthintnameofpet">Nombre del peludito:</string>
+    <string name="txthintnameofpetNN">N.N.</string>
+    <string name="txthintageofpet">Edad:</string>
+    <string name="txthintspeciesofpet">Especie:</string>
+    <string name="txthintsexofpet">Genero:</string>
+    <string name="txthintraceofpet">Raza:</string>
+    <string name="txthintstateofpet">Estado reproductivo: </string>
+    <string name="txthintlocationofpet">Ubicación:</string>
+    <string name="txthintdescriptionfpet">Descripción:</string>
+    <string name="txttiletoolbar_addnewadoption">Publicar adopción</string>
+    <string name="txttiletoolbar_updateadoption">Editar adopción</string>
+    <string name="txterrortilteadoption">Ingresa el nombre del peludito</string>
+    <string name="txterrorageadoption">Ingresa la edad del peludito</string>
+    <string name="txterrorspeciesadoption">Ingresa la especie del peludito</string>
+    <string name="txterrorraceadoption">Ingresa la raza del peludito</string>
+    <string name="txterrorsexadoption">Seleciona el Genero del peludito</string>
+    <string name="txterrorstateadoption">Seleciona el estado reproductivo del peludito</string>
+    <string name="txterrorlocationadoption">Ingresa la ubicación actual del peludito</string>
+    <string name="txterrordescadoption">Ingresa una descripción del peludito </string>
+    <string name="txtpublishedby">Publicado por</string>
+    <string name="txtcontact2">Contactar</string>
+    <string name="txtGenero">Genero</string>
+    <string name="txtEstadoReproductivo">Estado reproductivo</string>
+    <string name="msmnotificationadop">¡Espera ser adoptad@ por ti!</string>
+    <string name="txtnotificommentadoption">Comento tu publicación de adopción </string>
+
+    <!--Txt AddReportLostActivity-->
+    <string name="txttiletoolbar_addnewreportlost">Publicar Animal Perdido</string>
+    <string name="txttiletoolbar_addnewreportfound">Publicar Animal Encontrado</string>
+    <string name="txttiletoolbar_animallost">Perdidos</string>
+    <string name="txttiletoolbar_animalfund">Encontrados</string>
+    <string name="txttiletoolbar_updatereportlost">Editar Reporte </string>
+    <string name="msmnotificationlost">¡Esta perdid@ si lo viste por favor ayúdal@ a volver a casa!</string>
+    <string name="titletvdetailreportlost">Se Busca</string>
+    <string name="titletvdetailreportfound">Encontrado</string>
+    <string name="txtpostanimallost">Reportar Animal Perdido</string>
+    <string name="txtpostanimalfound">Reportar Animal Encontrado</string>
+    <string name="txtcomunitybtn">¿Qué quieres compartir hoy?</string>
+    <string name="txtadoptionbtn">Publicar Adopción</string>
+    <string name="txtnotificommentReportsFound">Comento tu publicación de reporte de mascota encontrada</string>
+    <string name="txtnotificommentReportsLost">Comento tu publicación de reporte de mascota perdida</string>
+    <string name="txthello">¡Hola!</string>
+    <string name="txtmessagereportfound">¡Gracias por ayudar a este peludito en apuros!</string>
+    <string name="txtmessagereportfound2">Por favor proporciona la mayor cantidad de información disponible sobre él para que pueda volver pronto a casa.</string>
+
+    <!--Txt AddServicesActivity-->
+    <string name="txtservicename">Nombre del negocio:</string>
+    <string name="txtservicecategory">Categoría:</string>
+    <string name="txtserviceschedule">Horario de atención:</string>
+    <string name="txtserviceschedule2">Horario:</string>
+    <string name="txtservicenumercontact">Número de contacto:</string>
+    <string name="txtservicenumercontact2">Número de contacto o WhatsApp:</string>
+    <string name="txtservicewebsite">Sitio Web o Redes Sociales (opcional)</string>
+    <string name="txtservicewebsite2">Sitio Web o Redes Sociales:</string>
+    <string name="txterrortilteservice">Ingresa el nombre del servicio</string>
+    <string name="txterrorcategoryservice">Selecciona la categoría del servicio</string>
+    <string name="txterrorlocationservice">Ingresa la ubicación del local</string>
+    <string name="txterrorscheduleservice">Ingresa el horario de atención</string>
+    <string name="txterrornumercontactservice">Ingresa el numero de contacto</string>
+    <string name="txterrordesservice">Ingresa una descripción del servicio</string>
+    <string name="textpermissionlocation">Habilita el permiso de Ubicación</string>
+    <string name="textpleacewait">Espere por favor...</string>
+    <string name="pleaseactivatelocation">Por favor encienda la ubicación del dispositivo...</string>
+    <string name="txtmsmlocationservice">Recuerda que de ser necesario editar la ubicación de este servicio debes hacer uso del icono de GPS, debido a que cuando lo creaste aceptaste utilizar esta función para localizarlo, si requieres el ingreso manual de este dato tendrás que crear una nueva publicación desde cero para tu servicio.</string>
+    <string name="msmimportant">¡Importante!</string>
+    <string name="msmalertlocation">Asegúrate de estar en la ubicación de tu servicio, ya que al seleccionar el medio de ubicación GPS, este tomara como punto de referencia tu localización actual, y en caso de querer realizar una actualización futura de este dato tendrás que usar este mismo medio (GPS).</string>
+    <string name="msnonbackpressed">¿Desea descartar la publicación?</string>
+
+    <!--Txt ServicesFragment-->
+    <string name="txtveterinary">Veterinarias</string>
+    <string name="txtstorepets">Tiendas</string>
+    <string name="txtdaycarecenters">Guarderías</string>
+    <string name="txtfundtions">Fundaciones</string>
+    <string name="txtaesthetic">Estéticas</string>
+    <string name="txtservicebtn">Compartir Servicio</string>
+    <string name="msmnotificationservice">¡Ya está aquí, conoce más sobre todos los servicios que tiene para ofrecerte!</string>
+    <string name="txtnotificommentService">Comento sobre tu servicio</string>
+    <string name="txtnotifilikedservice">Le gusta tu servicio</string>
+    <string name="txttypeservice">¿Qué tipo de servicio estas buscando para tu peludito?</string>
+    <string name="txtresults">Resultados</string>
+
+
+    <!--- Array de spinnersex-->
+    <string-array name="spinner_items_sex">
+        <item>Genero</item>
+        <item>Macho</item>
+        <item>Hembra</item>
+    </string-array>
+    <string name="txtmacho">Macho</string>
+    <string name="txthembra">Hembra</string>
+
+    <!--- Array de spinnerstate-->
+    <string-array name="spinner_items_state">
+        <item>Estado reproductivo</item>
+        <item>Esterilizado(a)</item>
+        <item>Sin Esterilizar</item>
+    </string-array>
+    <string name="txtEsterilizado">Esterilizado(a)</string>
+    <string name="txtSinEsterilizar">Sin Esterilizar</string>
+
+    <!--- Array de spinnerstate-->
+    <string-array name="spinner_items_state_found">
+        <item>Estado reproductivo</item>
+        <item>Esterilizado(a)</item>
+        <item>Sin Esterilizar</item>
+        <item>Sin definir</item>
+    </string-array>
+    <string name="txtEsterilizadofound">Esterilizado(a)</string>
+    <string name="txtSinEsterilizarfound">Sin Esterilizar</string>
+    <string name="txtSindefinirfound">Sin definir</string>
+
+    <!--- Array de spinnercategory-->
+    <string-array name="spinner_items_category">
+        <item>Categoría</item>
+        <item>Veterinarias</item>
+        <item>Tiendas</item>
+        <item>Guarderías</item>
+        <item>Fundaciones</item>
+        <item>Estéticas</item>
+    </string-array>
+    <string name="txtVeterinarias">Veterinarias</string>
+    <string name="txtTiendas">Tiendas</string>
+    <string name="txtGuarderías">Guarderías</string>
+    <string name="txtFundaciones">Fundaciones</string>
+    <string name="txtEstéticas">Estéticas</string>
+    <string name="txtservicecategory2">Categoría</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.canibal.appdoptafirebase">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/AppThemeDark">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".HelpActivity" />
+        <activity android:name=".EditUserDataActivity" />
+        <activity
+            android:name=".ServiceDetailActivity"
+            android:theme="@style/AppThemeDark" />
+        <activity android:name=".AddServiceActivity" />
+        <activity android:name=".AddReportsFoundActivity" />
+        <activity
+            android:name=".ReportsFoundDetailActivity"
+            android:theme="@style/AppThemeDark" />
+        <activity
+            android:name=".ReportsLostDetailActivity"
+            android:theme="@style/AppThemeDark" />
+        <activity android:name=".AddReportsLostActivity" />
+        <activity
+            android:name=".DetailImageActivity"
+            android:theme="@style/AppThemeDark2" />
+        <activity
+            android:name=".AdoptionDetailActivity"
+            android:theme="@style/AppThemeDark" />
+        <activity android:name=".Dashboard4Activity" />
+        <activity android:name=".Dashboard3Activity" />
+        <activity android:name=".Dashboard2Activity" />
+        <activity
+            android:name=".PostCommentByActivity"
+            android:theme="@style/AppThemeDark" />
+        <activity android:name=".UsersListActivity" />
+        <activity
+            android:name=".PostLikedByActivity"
+            android:theme="@style/AppThemeDark" />
+        <activity android:name=".SettingsActivity" />
+        <activity
+            android:name=".PostDetailActivity"
+            android:theme="@style/AppThemeDark" />
+        <activity android:name=".ThereProfileActivity" />
+        <!--
+Intent filters inform the system what intents an application component is willing to accept.
+            To receive text/image type of intents we will add intent filter to activity, that handle that data
+        -->
+        <activity android:name=".AddPostActivity">
+            <intent-filter>
+
+                <!-- For image -->
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+
+                <!-- For text -->
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddAdoptionActivity">
+            <intent-filter>
+
+                <!-- For image -->
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+
+                <!-- For text -->
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppThemeDark" />
+        <activity
+            android:name=".ChatActivity"
+            android:theme="@style/AppThemeNo" />
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".RegisterActivity" />
+
+        <service
+            android:name=".notifications.FirebaseMessaging"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- define list provider -->
+        <!--
+set the android:exported attribute to false;
+        the FileProvider does not need to be public.
+        -->
+        <!--
+set the android: grantUriPermissions attribute to true,
+        to allow you to grant temporary access to files.
+        -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.canibal.appdoptafirebase.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/paths" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="2dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--ImageView: User profile image-->
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:id="@+id/profileIv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/ic_default_img"
+            android:src="@drawable/ic_default_img" />
+
+        <!--ImageView: Online/Offline Status-->
+        <ImageView
+            android:id="@+id/onlineStatusIv"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <!--TextView: User name -->
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/profileIv"
+            android:layout_toRightOf="@+id/profileIv"
+            android:text="@string/textinput_name"
+            android:textColor="@color/TextColorBlack"
+            android:textSize="18sp" />
+
+        <!--TextView: Last message (by sender/receiver)-->
+        <TextView
+            android:id="@+id/lastMessageTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameTv"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="4dp"
+            android:layout_toEndOf="@+id/profileIv"
+            android:layout_toRightOf="@+id/profileIv"
+            android:maxLines="2"
+            android:text="@string/chatmsmet" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

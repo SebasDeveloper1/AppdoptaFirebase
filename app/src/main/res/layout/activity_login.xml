@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/logologin" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_horizontal_login">
+
+                    <!--EditText: Inout Email-->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/emailTLI"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/margintop_imagelogin"
+                        android:theme="@style/EditTextWhite">
+
+                        <EditText
+                            android:id="@+id/emailEt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/textinput_email"
+                            android:inputType="textEmailAddress" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!--EditText: Inout password -->
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/passwordTLI"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:theme="@style/EditTextWhite"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleTint="@android:color/white"
+
+                        >
+
+                        <EditText
+                            android:id="@+id/passwordEt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/textinput_password"
+                            android:inputType="textPassword" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!--Butoon: register user-->
+
+                    <Button
+                        android:id="@+id/loginBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/top_marggin_button"
+                        android:text="@string/textBtn_login_btn"
+                        android:theme="@style/RaisedButtonDark" />
+
+                    <!--GoogleSignInBtn: sign in with google account -->
+                    <com.google.android.gms.common.SignInButton
+                        android:id="@+id/googleLoginBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/margintopBtn_googlesign"
+                        android:visibility="gone">
+
+                    </com.google.android.gms.common.SignInButton>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/margintop_nothave"
+                        android:gravity="center">
+
+                        <!--TextView: click go to RegisterActivity -->
+                        <TextView
+                            android:id="@+id/nothave_accountTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margintop_nothave"
+                            android:gravity="center_horizontal"
+                            android:text="@string/textvwdont_have_account"
+                            android:textAlignment="center"
+                            android:textColor="@color/TextColorWhite"
+                            android:textSize="@dimen/textsize_donhaveaccount"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:id="@+id/linerV"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_divider"
+                            android:layout_below="@+id/nothave_accountTv"
+                            android:layout_marginTop="@dimen/margintoptv_recoverpassword"
+                            android:background="@android:color/white" />
+
+
+                        <!-- Textciew show dialog to recover password-->
+                        <TextView
+                            android:id="@+id/recoverpasswordTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/linerV"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="@dimen/margintop_linerV"
+                            android:gravity="center_horizontal"
+                            android:text="@string/textvw_recoverpassword"
+                            android:textAlignment="center"
+                            android:textColor="@color/TextColorWhite"
+                            android:textSize="@dimen/textsize_donhaveaccount"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

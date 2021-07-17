@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_vertical_margin">
+
+            <!--EditText: Input Email-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/namelTLI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/edittext_margintop_createaccount"
+                app:counterEnabled="true"
+                app:counterMaxLength="35">
+
+                <!-- EditText: Input post title -->
+                <EditText
+                    android:id="@+id/nameEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/rectangle_bag_gray"
+                    android:hint="@string/textinput_name"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="35"
+                    android:maxLines="5"
+                    android:padding="12dp"
+                    android:scrollbars="vertical"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--EditText: Input Email-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailTLI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/edittext_margintop_createaccount">
+
+                <EditText
+                    android:id="@+id/emailEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_bag_gray"
+                    android:hint="@string/textinput_email"
+                    android:inputType="textEmailAddress"
+                    android:padding="12dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/edittext_margintop_createaccount"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:orientation="vertical">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/ccp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/rectangle_bag_gray"
+                        android:padding="4dp"
+                        app:ccpDialog_fastScroller_handleColor="@color/colorPrimaryDark"
+                        app:ccpDialog_initialScrollToSelection="true"
+                        app:ccp_autoDetectCountry="true"
+                        app:ccp_autoDetectLanguage="true"
+                        app:ccp_defaultNameCode="CO"
+                        app:ccp_flagBorderColor="@color/colorPrimary" />
+
+                </LinearLayout>
+
+                <!--EditText: Input phone-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/phoneTLI"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/phoneEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle_bag_gray"
+                        android:hint="@string/textinput_phone"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:padding="12dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <!--EditText: Input password -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordTLI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/edittext_margintop_createaccount"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/passwordEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_bag_gray"
+                    android:hint="@string/textinput_password"
+                    android:inputType="textPassword"
+                    android:padding="12dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--EditText: Input confir_password -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/confirm_passwordTLI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/edittext_margintop_createaccount"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/confirm_passwordEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_bag_gray"
+                    android:hint="@string/textinput_confirmpassword"
+                    android:inputType="textPassword"
+                    android:padding="12dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_marggin_button"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/aceptCB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginRight="3dp"
+                    android:text="@string/txtacceptthetermsandconditionsofuse1"
+                    android:textColor="@color/TextColorBlack" />
+
+                <TextView
+                    android:id="@+id/txttermsandconditionsTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtacceptthetermsandconditionsofuse2"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <!--Butoon: register user-->
+
+            <Button
+                android:id="@+id/registerBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/top_marggin_button"
+                android:text="@string/textBtn_register_btn"
+                android:theme="@style/RaisedButtonDark4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginRight="3dp"
+                    android:text="@string/texvwaready_have_ancout1"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="@dimen/textsize_donhaveaccount" />
+
+                <!--TextView: click go to LoginActivity -->
+                <TextView
+                    android:id="@+id/have_accountTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texvwareadyancout"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/textsize_donhaveaccount"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_divider"
+                android:layout_marginTop="@dimen/margintop_imagelogin"
+                android:background="@android:color/darker_gray" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

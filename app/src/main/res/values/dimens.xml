@@ -1,0 +1,25 @@
+<resources>
+
+    <dimen name="edittext_textsize_login">22sp</dimen>
+    <dimen name="textsize_register">25sp</dimen>
+    <dimen name="textsize_textviewprofile">30sp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="padding_horizontal_login">32dp</dimen>
+    <dimen name="margintop_logo_activitymail">100dp</dimen>
+    <dimen name="margintop_Btn_activitymain">40dp</dimen>
+    <dimen name="textsize_btnactivitymain">23sp</dimen>
+    <dimen name="textsize_donhaveaccount">16sp</dimen>
+    <dimen name="top_marggin_button">25dp</dimen>
+    <dimen name="edittext_margintop_createaccount">10dp</dimen>
+    <dimen name="height_divider">1dp</dimen>
+    <dimen name="margintop_imagelogin">40dp</dimen>
+    <dimen name="marginBt_recoverpassword">10dp</dimen>
+    <dimen name="marginBt_linelogin">40dp</dimen>
+    <dimen name="margintoptv_recoverpassword">30dp</dimen>
+    <dimen name="margintopBtn_googlesign">5dp</dimen>
+    <dimen name="margintop_nothave">15dp</dimen>
+    <dimen name="margintop_linerV">10dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

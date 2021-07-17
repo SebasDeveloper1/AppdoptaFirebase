@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorBackgroundServices"
+    tools:context=".ServicesFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="3dp"
+                app:cardUseCompatPadding="true">
+
+                <ImageView
+                    android:id="@+id/BannerIv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coverservicios" />
+
+                <Button
+                    android:id="@+id/AddServiceBt"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:drawableStart="@drawable/ic_services_white"
+                    android:drawableLeft="@drawable/ic_services_white"
+                    android:drawableEnd="@drawable/ic_services_white"
+                    android:drawableRight="@drawable/ic_services_white"
+                    android:text="@string/txtservicebtn"
+                    android:textColor="@color/background"
+                    android:theme="@style/RaisedButtonBlank" />
+
+            </androidx.cardview.widget.CardView>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="3dp">
+
+                        <!-- Floating Action Button-->
+                        <com.getbase.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/fapvete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:fab_colorNormal="@color/TextColorWhite"
+                            app:fab_colorPressed="@color/colorPrimaryopaci"
+                            app:fab_icon="@drawable/veterinarianblue" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/txtveterinary"
+                            android:textColor="@color/TextcolorPrimaryText"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="3dp">
+
+                        <!-- Floating Action Button-->
+                        <com.getbase.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/fapstore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:fab_colorNormal="@color/TextColorWhite"
+                            app:fab_colorPressed="@color/ColorPruplePrimayopacy"
+                            app:fab_icon="@drawable/ic_store_purple" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal"
+                            android:text="@string/txtstorepets"
+                            android:textColor="@color/TextcolorPrimaryText"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="3dp">
+
+                        <!-- Floating Action Button-->
+                        <com.getbase.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/fapguarde"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:fab_colorNormal="@color/TextColorWhite"
+                            app:fab_colorPressed="@color/ColorRedPrimayopaci"
+                            app:fab_icon="@drawable/animal_home_red" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/txtdaycarecenters"
+                            android:textColor="@color/TextcolorPrimaryText"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="3dp">
+
+                        <!-- Floating Action Button-->
+                        <com.getbase.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/fapfundations"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:fab_colorNormal="@color/TextColorWhite"
+                            app:fab_colorPressed="@color/ColorGreeniconopaci"
+                            app:fab_icon="@drawable/dog_heart_green" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/txtfundtions"
+                            android:textColor="@color/TextcolorPrimaryText"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="3dp">
+
+                        <!-- Floating Action Button-->
+                        <com.getbase.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/fapAesthetic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:fab_colorNormal="@color/TextColorWhite"
+                            app:fab_colorPressed="@color/ColororangePrimayopacy"
+                            app:fab_icon="@drawable/ic_aesthetic_orange" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/txtaesthetic"
+                            android:textColor="@color/TextcolorPrimaryText"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtTitleService"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:textColor="@color/TextColorBlack"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <!--Imagen de Bienvenida-->
+                <ImageView
+                    android:id="@+id/DogIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/perrito"
+                    android:visibility="visible" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/servicesRecyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

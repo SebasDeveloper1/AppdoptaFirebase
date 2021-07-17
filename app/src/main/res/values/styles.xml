@@ -1,0 +1,135 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeDark" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeDark2" parent="Theme.AppCompat.DayNight">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/backgroundblack</item>
+        <item name="colorPrimaryDark">@color/TextColorBlack</item>
+        <item name="colorAccent">@color/TextColorWhite</item>
+        <item name="android:textColorPrimary">@color/TextColorWhite</item>
+        <item name="android:textColorSecondary">@color/TextColorWhite</item>
+    </style>
+
+    <style name="RaisedButtonDark" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="RaisedButtonGreen" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/ColorgreenDark</item>
+        <item name="colorControlHighlight">@color/Colorgreen</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="RaisedButtonBlank" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/backgroundtext_card2</item>
+        <item name="colorControlHighlight">@color/TextColorBlack</item>
+        <item name="android:bottomRightRadius">50dp</item>
+        <item name="android:topRightRadius">50dp</item>
+        <item name="android:bottomLeftRadius">50dp</item>
+        <item name="android:topLeftRadius">50dp</item>
+    </style>
+
+    <style name="RaisedButtonDark2" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/Coloracent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:bottomRightRadius">50dp</item>
+        <item name="android:topRightRadius">50dp</item>
+        <item name="android:bottomLeftRadius">50dp</item>
+        <item name="android:topLeftRadius">50dp</item>
+    </style>
+
+    <style name="RaisedButtonDark3" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/ColorgreenDark2</item>
+        <item name="colorControlHighlight">@color/ColorgreenDark</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:bottomRightRadius">50dp</item>
+        <item name="android:topRightRadius">50dp</item>
+        <item name="android:bottomLeftRadius">50dp</item>
+        <item name="android:topLeftRadius">50dp</item>
+    </style>
+
+    <style name="RaisedButtonDark4" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:bottomRightRadius">50dp</item>
+        <item name="android:topRightRadius">50dp</item>
+        <item name="android:bottomLeftRadius">50dp</item>
+        <item name="android:topLeftRadius">50dp</item>
+    </style>
+
+    <style name="RaisedButtonWhite" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@android:color/white</item>
+        <item name="colorControlHighlight">@color/background</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="RaisedButtonWhite2" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@android:color/white</item>
+        <item name="colorControlHighlight">@color/background</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:bottomRightRadius">50dp</item>
+        <item name="android:topRightRadius">50dp</item>
+        <item name="android:bottomLeftRadius">50dp</item>
+        <item name="android:topLeftRadius">50dp</item>
+    </style>
+
+    <style name="RaisedButtonPurple" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/ColorPruplePrimayDark</item>
+        <item name="colorControlHighlight">@color/ColorPruplePrimay</item>
+        <item name="android:textColor">@color/TextColorWhite</item>
+        <item name="android:bottomRightRadius">50dp</item>
+        <item name="android:topRightRadius">50dp</item>
+        <item name="android:bottomLeftRadius">50dp</item>
+        <item name="android:topLeftRadius">50dp</item>
+    </style>
+
+    <style name="EditTextWhite" parent="Theme.AppCompat.Light">
+        <item name="android:textColorHint">@color/editTextColorWhite</item>
+        <item name="android:textSize">@dimen/edittext_textsize_login</item>
+        <item name="android:textColorPrimary">@color/editTextColorWhite</item>
+        <item name="colorAccent">@color/editTextColorWhite</item>
+        <item name="colorControlNormal">@color/editTextColorWhite</item>
+        <item name="colorControlActivated">@color/editTextColorWhite</item>
+    </style>
+
+    <style name="EditTextBlack" parent="Theme.AppCompat.Light">
+        <item name="android:textColorHint">@color/editTextColorBlack</item>
+        <item name="android:textSize">@dimen/edittext_textsize_login</item>
+        <item name="android:textColorPrimary">@color/editTextColorBlack</item>
+        <item name="colorAccent">@color/editTextColorBlack</item>
+        <item name="colorControlNormal">@color/editTextColorBlack</item>
+        <item name="colorControlActivated">@color/editTextColorBlack</item>
+    </style>
+
+    <!-- For activities containg toolbar // Para actividades contactando barra de herramientas-->
+    <style name="AppThemeNo" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

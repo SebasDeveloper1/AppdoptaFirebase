@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryopaci">#802196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="editTextColorWhite">#FFFFFF</color>
+    <color name="backgroundtext_card">#53292929</color>
+    <color name="backgroundtext_card2">#80000000</color>
+    <color name="editTextColorBlack">#000000</color>
+    <color name="TextColorWhite">#fff</color>
+    <color name="TextColorBlack">#000</color>
+    <color name="TextColorBlackopaci">#80212121</color>
+    <color name="TextcolorGray">#757575</color>
+    <color name="TextcolorPrimaryText">#212121</color>
+    <color name="background">#F1EDED</color>
+    <color name="background2">#F1F5F8</color>
+    <color name="background3">#c9ccd1</color>
+    <color name="backgroundblack">#16171b</color>
+    <color name="GrayPrimaryColor">#9E9E9E</color>
+    <color name="GraybluePrimaryColor">#9E9E9E</color>
+    <color name="Colorrectanglebuttonmargin">#B3000000</color>
+    <color name="ColorOnline">#1ed760</color>
+    <color name="Colorgreen">#75e900</color>
+    <color name="ColorgreenDark">#41c300</color>
+    <color name="ColorgreenDark2">#10a310</color>
+    <color name="Coloracent">#ef0078</color>
+    <color name="ColoracentDark">#c7006e</color>
+    <color name="ColorBackgroundWhatsapp">#8040c351</color>
+    <color name="ColorBackgroundChatAppdopta">#802196f3</color>
+    <color name="ColorBackgroundServices">#e8f5fe</color>
+    <color name="ColorBackgroundPhone">#80fa314a</color>
+    <color name="ColorPruplePrimay">#9C27B0</color>
+    <color name="ColorPruplePrimayDark">#7B1FA2</color>
+    <color name="ColorRedPrimay">#fa314a</color>
+    <color name="ColorGreenicon">#26e07f</color>
+    <color name="ColorRedPrimayopaci">#80fa314a</color>
+    <color name="ColorGreeniconopaci">#8026e07f</color>
+    <color name="ColorPruplePrimayopacy">#809C27B0</color>
+    <color name="ColororangePrimayopacy">#80FF5722</color>
+    <color name="ColororangePrimary">#FF5722</color>
+
+
+</resources>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    tools:context=".AddServiceActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                        android:id="@+id/avatarIv"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:background="@drawable/fondo"
+                        android:src="@drawable/fondo" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/nameTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:hint="@string/textinput_name"
+                            android:textColor="@android:color/white"
+                            android:textSize="17sp" />
+
+                    </LinearLayout>
+
+                    <!-- Button Publish post  to firebase -->
+                    <Button
+                        android:id="@+id/pUploadBtn"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:text="@string/txtaddpost"
+                        android:theme="@style/RaisedButtonDark4" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangle_primarycolor"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            app:cardCornerRadius="20dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal">
+
+                                <ImageView
+                                    android:id="@+id/pImageIv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:adjustViewBounds="true"
+                                    android:maxHeight="600dp"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/backgroundservice"
+                                    android:visibility="visible" />
+
+                                <ImageButton
+                                    android:id="@+id/closeimageBtn"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_alignEnd="@+id/pImageIv"
+                                    android:layout_alignRight="@+id/pImageIv"
+                                    android:background="@null"
+                                    android:src="@drawable/ic_close_accent"
+                                    android:visibility="gone" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <!--Button select image // boton seleccionar imagen-->
+                    <Button
+                        android:id="@+id/imageBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="30dp"
+                        android:text="@string/imagebtntxt"
+                        android:theme="@style/RaisedButtonDark4" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_divider"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <!-- EditText: Input adoption name pet -->
+                    <EditText
+                        android:id="@+id/pTitleEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/rectangle_bag_gray"
+                        android:hint="@string/txtservicename"
+                        android:padding="12dp"
+                        android:singleLine="true" />
+
+                    <Spinner
+                        android:id="@+id/pCategoryEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rectangle_bag_gray"
+                        android:padding="12dp" />
+
+                    <LinearLayout
+                        android:id="@+id/msmlocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/shape_rectangle_primary_opacy"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txthello"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <com.codesgood.views.JustifiedTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="@string/txtmsmlocationservice"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <!-- EditText: Input adoption location pet -->
+                        <EditText
+                            android:id="@+id/pLocationEt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_bag_gray"
+                            android:hint="@string/txthintlocationofpet"
+                            android:padding="12dp"
+                            android:singleLine="true" />
+
+                        <com.getbase.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/gpsBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:fab_colorNormal="@color/colorPrimaryDark"
+                            app:fab_colorPressed="@color/colorPrimary"
+                            app:fab_icon="@drawable/ic_location_white"
+                            app:fab_size="mini" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/pScheduleEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rectangle_bag_gray"
+                        android:hint="@string/txtserviceschedule"
+                        android:padding="12dp"
+                        android:singleLine="true" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rectangle_bag_gray"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <com.hbb20.CountryCodePicker
+                                android:id="@+id/ccp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:ccpDialog_fastScroller_handleColor="@color/colorPrimaryDark"
+                                app:ccpDialog_initialScrollToSelection="true"
+                                app:ccp_autoDetectCountry="true"
+                                app:ccp_autoDetectLanguage="true"
+                                app:ccp_defaultNameCode="CO"
+                                app:ccp_flagBorderColor="@color/colorPrimary" />
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/pNumerContactEt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/rectangle_bag_gray"
+                            android:hint="@string/txtservicenumercontact2"
+                            android:inputType="phone"
+                            android:maxLength="10"
+                            android:padding="12dp"
+                            android:singleLine="true" />
+
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/pServicewebsite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:autoLink="all"
+                        android:background="@drawable/rectangle_bag_gray"
+                        android:hint="@string/txtservicewebsite"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:padding="12dp"
+                        android:singleLine="true"
+                        android:textColorLink="@color/colorPrimary" />
+
+                    <!--EditText: Input adoption descripcion pet-->
+                    <EditText
+                        android:id="@+id/pDescriptionEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="30dp"
+                        android:autoLink="all"
+                        android:background="@drawable/rectangle_bag_gray"
+                        android:hint="@string/textinput_descrip"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:minHeight="100dp"
+                        android:padding="10dp"
+                        android:textColorLink="@color/colorPrimary" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

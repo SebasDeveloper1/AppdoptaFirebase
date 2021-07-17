@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/TextColorWhite"
+    android:orientation="vertical">
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/dialogcloseBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:fab_colorNormal="@color/colorAccent"
+        app:fab_colorPressed="@color/ColoracentDark"
+        app:fab_icon="@drawable/ic_close_withe"
+        app:fab_size="mini" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/txterror"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/edittext_textsize_login"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/margintopBtn_googlesign"
+            android:layout_marginBottom="@dimen/margintop_nothave"
+            android:background="#c9ccd1" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="35">
+
+            <!-- EditText: Input post title -->
+            <EditText
+                android:id="@+id/affairEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/rectangle_bag_gray"
+                android:hint="@string/txtreport"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="35"
+                android:maxLines="5"
+                android:padding="12dp"
+                android:scrollbars="vertical"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="700">
+
+            <!-- EditText: Input post title -->
+            <EditText
+                android:id="@+id/reportEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/rectangle_bag_gray"
+                android:hint="@string/textinput_descrip"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="700"
+                android:maxLines="15"
+                android:minHeight="100dp"
+                android:padding="10dp"
+                android:scrollbars="vertical"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Button update password-->
+        <Button
+            android:id="@+id/sendreportBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/textsize_register"
+            android:text="@string/txtsend"
+            android:theme="@style/RaisedButtonDark" />
+
+    </LinearLayout>
+
+</LinearLayout>
