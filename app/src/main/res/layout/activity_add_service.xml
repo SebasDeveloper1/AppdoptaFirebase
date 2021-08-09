@@ -211,7 +211,8 @@
                             app:fab_colorNormal="@color/colorPrimaryDark"
                             app:fab_colorPressed="@color/colorPrimary"
                             app:fab_icon="@drawable/ic_location_white"
-                            app:fab_size="mini" />
+                            app:fab_size="mini"
+                            android:visibility="gone"/>
 
                     </LinearLayout>
 

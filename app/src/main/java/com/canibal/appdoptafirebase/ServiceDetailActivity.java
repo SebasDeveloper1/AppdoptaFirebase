@@ -848,7 +848,7 @@ public class ServiceDetailActivity extends AppCompatActivity {
 
 
                     if (!sourceLongitude.equals("0.0") && !sourceLatitude.equals("0.0")) {
-                        mapBtn.setVisibility(View.VISIBLE);
+                        mapBtn.setVisibility(View.GONE);
 
                     } else if (sourceLongitude.equals("0.0") || sourceLatitude.equals("0.0")) {
                         mapBtn.setVisibility(View.GONE);
