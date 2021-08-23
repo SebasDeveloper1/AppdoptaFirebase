@@ -65,7 +65,7 @@ public class AdapterChatlist extends RecyclerView.Adapter<AdapterChatlist.MyHold
         // establece el estado en línea de otros usuarios en la lista de chat
         if (userList.get(i).getOnlineStatus().equals("online")) {
             //online
-            myHolder.onlineStatusIv.setImageResource(R.drawable.circle_online);
+            myHolder.onlineStatusIv.setImageResource(R.drawable.circle_offline);
         } else {
             //offline
             myHolder.onlineStatusIv.setImageResource(R.drawable.circle_offline);

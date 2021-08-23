@@ -5,8 +5,12 @@
       <map>
         <entry key="..\:/Users/mikey/AndroidStudioProjects/AppdoptaFirebase/app/src/main/res/layout/activity_add_service.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/mikey/AndroidStudioProjects/AppdoptaFirebase/app/src/main/res/layout/activity_dashboard.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/mikey/AndroidStudioProjects/AppdoptaFirebase/app/src/main/res/layout/activity_help.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/mikey/AndroidStudioProjects/AppdoptaFirebase/app/src/main/res/layout/activity_login.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/mikey/AndroidStudioProjects/AppdoptaFirebase/app/src/main/res/layout/activity_service_detail.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/mikey/AndroidStudioProjects/AppdoptaFirebase/app/src/main/res/layout/fragment_chat_list.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/mikey/AndroidStudioProjects/AppdoptaFirebase/app/src/main/res/layout/fragment_profile.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/mikey/AndroidStudioProjects/AppdoptaFirebase/app/src/main/res/layout/row_chatlist.xml" value="0.22447916666666667" />
       </map>
     </option>
   </component>
